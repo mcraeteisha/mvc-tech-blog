@@ -35,14 +35,14 @@ User.init(
                 len: [8],
             },
         },
-        userPost: {
+        user_post: {
             type: DataTypes.STRING,
             references: {
                 model: 'post',
                 key: 'title',
             },
         },
-        userComment: {
+        user_comment: {
             type: DataTypes.STRING,
             references: {
                 model: 'comment',

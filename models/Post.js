@@ -24,14 +24,14 @@ Post.init(
             allowNull: false,
             defaultValue: DataTypes.NOW,
         },
-        name: {
+        user_name: {
             type: DataTypes.STRING,
             references: {
                 model: 'user',
                 key: 'name',
             }
         },
-        comment: {
+        post_comment: {
             type: DataTypes.STRING,
             references: {
                 model: 'comment',
