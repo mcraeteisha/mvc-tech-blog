@@ -24,11 +24,11 @@ Post.init(
             allowNull: false,
             defaultValue: DataTypes.NOW,
         },
-        user_name: {
+        name: {
             type: DataTypes.STRING,
             references: {
                 model: 'user',
-                key: 'user_name',
+                key: 'name',
             }
         },
         comment: {
