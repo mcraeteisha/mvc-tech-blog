@@ -11,28 +11,9 @@ Comment.init(
             primaryKey: true,
             autoIncrement: true,
         },
-        content: {
+        body: {
             type: DataTypes.STRING,
             allowNull: false,
-        },
-        date_created: {
-            type: DataTypes.DATE,
-            allowNull: false,
-            defaultValue: DataTypes.NOW,
-        },
-        user_name: {
-            type: DataTypes.STRING,
-            references: {
-                model: 'user',
-                key: 'name',
-            }
-        },
-        user_post: {
-            type: DataTypes.STRING,
-            references: {
-                model: 'post',
-                key: 'name',
-            }
         },
     },
     {
