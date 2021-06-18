@@ -42,7 +42,6 @@ Some of the learnings I'm taking away from this project are:
 ## Contributors
 Teisha McRae
 
-![Website Screenshot](https://user-images.githubusercontent.com/73713665/122608616-87d56a80-d04a-11eb-8e0d-b1f0dde61253.png)
+![Website Screenshot](https://user-images.githubusercontent.com/73713665/122609112-750f6580-d04b-11eb-83c7-86a5bca9770a.png)
 
-![Website Screenshot](xxx)
 
