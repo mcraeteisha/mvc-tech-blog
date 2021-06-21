@@ -2,7 +2,7 @@
 The Tech Blog is a CMS-style blog that allows developers to share tech content with other developers and techies. Users have the ability to publish posts, edit and update posts, view other users' posts, and make comments. 
 
 ## Link to Deployed Application
-[The Tech Blog](xxx)
+[The Tech Blog](https://teisha-m-tech-blog.herokuapp.com/)
 
 ## User Story
 As a develop who writes about tech
@@ -43,6 +43,7 @@ Some of the learnings I'm taking away from this project are:
 ## Contributors
 Teisha McRae
 
+![Website Screenshot](https://user-images.githubusercontent.com/73713665/122702795-27972200-d21e-11eb-84c9-6c409ce86503.png)
 ![Website Screenshot](https://user-images.githubusercontent.com/73713665/122609112-750f6580-d04b-11eb-83c7-86a5bca9770a.png)
 
 

@@ -53,12 +53,6 @@ router.get('/', async (req, res) => {
   try {
       const dbPostData = await Post.findAll(
       );
-
-      const homePosts = dbPostData.map((Post) =>
-          Post.get({ plain: true })
-      );
-
-      res.status(200).json(homePosts)
   } catch (err) {
       console.log(err);
       res.status(500).json(err);
