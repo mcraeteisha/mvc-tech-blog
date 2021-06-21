@@ -1,5 +1,9 @@
 const router = require('express').Router();
 const { User } = require('../../models');
+const session = require('express-session');
+const withAuth = require('../../utils/auth');
+const SequelizeStore = require('connect-session-sequelize')(session.Store);
+
 
 router.post('/', async (req, res) => {
   try {
@@ -52,7 +56,7 @@ router.post('/login', async (req, res) => {
   }
 });
 
-router.post('/logout', (req, res) => {
+router.post('/logout', withAuth, (req, res) => {
   if (req.session.loggedIn) {
     req.session.destroy(() => {
       res.status(204).end();
@@ -60,6 +64,17 @@ router.post('/logout', (req, res) => {
   } else {
     res.status(404).end();
   }
+});
+
+router.get ('/', (req, res) => {
+  User.findAll({
+    attributes: {exclude: ['password'] }
+  })
+  .then(userData => res.json(userData))
+  .catch(err => {
+    console.log(err);
+    res.status(500).json(err);
+  });
 });
 
 module.exports = router;

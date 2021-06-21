@@ -3,6 +3,7 @@
     {{#each homePosts as |post|}}
     <div class="post">
         <h4>{{post.title}}</h4>
+        <h5>{{format_date post.createdAt}}</h5>
         <h5>{{post.body}}</h5>
     </div>
     {{/each}}
