@@ -32,7 +32,7 @@ Using VS Code, MySQL, and Heroku, I completed the following:
 ## Learnings and Issues
 Some of the learnings I'm taking away from this project are:
 1. I had an issue with my Models that was causing a Sequelize Database Error. My tables were not being properly created based on the Models I'd set up. Thanks to help from a TA, Sean, I realized that I was passing unecessary sequelize information in my Post and Comment models (such as timestamps and freeTableName). This was the biggest issue I faced with this assignment. If I ever run into a similar Sequelize Database Error, I'll know where to look!
-2. Some of the handlebars pages were a little tricky to get right. In the end I think that my posts were not associated with any users and, as such, were not displaying for me. But I also think some of my handlebars pages just weren't correct. 
+2. Some of the handlebars pages were a little tricky to get right. I think I may not have fully understood the purpose of some of them and how they connected to other parts of the blog. For me, getting my posts to display correctly was a success!
 3. I definitely still struggle with Authentication, which is something I look forward to learning more about in the future. I struggled to get the login/logout pages to function properly for this assignment.
 
 ## Future Application Updates
